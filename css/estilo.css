@@ -36,7 +36,7 @@ header{
 .logo{
     font-size: 4.5em;
     font-family: 'California', sans-serif;
-    color: forestgreen;
+    color: #08A321;
     font-weight: 200;
     user-select: none;
     display: flex;
@@ -48,7 +48,7 @@ header{
 .navegacao a{
     position: relative;
     font-size: 1.4em;
-    color: forestgreen;
+    color: #08A321;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
@@ -62,7 +62,7 @@ header{
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: #08A321;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .5s;
@@ -77,157 +77,70 @@ header{
     width: 130px;
     height: 50px;
     background: transparent;
-    border: 2px solid forestgreen;
+    border: 2px solid #08A321;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.4em;
-    color: forestgreen;
+    color: #08A321;
     font-weight: 500;
     margin-left: 40px;
     transition: 0.3s ease-in-out;
 }
 
 .navegacao .btn_login:hover{
-    background: #fff;
-    color: black;
+    background: #08A321;
+    color: #fff;
 }
 
-/*Seção ofertas*/
+/*Parte de venda dos produtos*/
 
-.section-ofertas2{
+main{
     width: 100%;
-    height: 800px;
+    min-height: 1000px;
+    margin-top: 80px;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.section-ofertas2 .retangulo-verde{
-    background-color: #08A321;
-    width: 100%;
-    height: 100px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
-.section-ofertas2 .retangulo-verde h2{
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 2.5em;
-}
-
-.bloco-ofertas2{
-    width: 100%;
-    height: 400px;
+.bloco-filtro{
+    width: 20%;
+    height: 600px;
+    background-color: red;
+    margin-left: 10px;
     margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.card-venda2{
-    background-color: #fff;
-    width: 15%;
-    height: 290px;
-    
-    border-radius: 7px 7px 0 0;
-}
-
-.card-venda2 .img-card{
-    width: 100%;
-    height: 50%;
-    background-image: url(../img/pratovegano.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 7px 7px 0 0;
-}
-
-.card-venda2 h4{
-    font-weight: 500;
-    font-size: 0.9em;
-    margin-top: 10px;
-    margin-left: 5px;
-    color: black;
-}
-
-.card-venda2 h3{
-    color: #08A321;
-    margin-left: 5px;
-}
-
-.card-venda2 p {
-    margin-left: 5px;
-}
-
-.card-venda2 button{
-    background-color:green;
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 60%;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius:3px ;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.section-ofertas{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.section-ofertas .retangulo-verde{
-    background-color: #08A321;
-    width: 100%;
-    height: 100px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-ofertas .retangulo-verde h2{
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 2.5em;
 }
 
 .bloco-ofertas{
-    width: 100%;
+    width: 80%;
     height: 400px;
-    margin-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-top: 50px;
 }
 
 .card-venda{
     background-color: #fff;
-    width: 15%;
-    height: 290px;
-    
+    width: 20%;
+    height: 320px;
+    border-radius: 7px 7px 0 0;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.img-card{
+    width: 100%;
+    height: 50%;
     border-radius: 7px 7px 0 0;
 }
 
-.card-venda .img-card{
+.img-card img{
     width: 100%;
-    height: 50%;
-    background-image: url(../img/pratovegano.jpeg);
-    background-size: cover;
-    background-position: center;
+    height: 100%;
     border-radius: 7px 7px 0 0;
 }
 
@@ -249,277 +162,25 @@ header{
 }
 
 .card-venda button{
-    background-color:green;
+    width: 130px;
     height: 30px;
-    border: none;
-    padding: 4px;
-    width: 60%;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius:3px ;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-#botao{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.section-ofertas3{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.section-ofertas3 .retangulo-verde{
-    background-color: #08A321;
-    width: 100%;
-    height: 100px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-ofertas3 .retangulo-verde h2{
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 2.5em;
-}
-
-.bloco-ofertas3{
-    width: 100%;
-    height: 400px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.card-venda3{
-    background-color: #fff;
-    width: 15%;
-    height: 290px;
-    
-    border-radius: 7px 7px 0 0;
-}
-
-.card-venda3 .img-card{
-    width: 100%;
-    height: 50%;
-    background-image: url(../img/pratovegano.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 7px 7px 0 0;
-}
-
-.card-venda3 h4{
-    font-weight: 500;
-    font-size: 0.9em;
-    margin-top: 10px;
-    margin-left: 5px;
-    color: black;
-}
-
-.card-venda3 h3{
+    background: transparent;
+    border: 2px solid #08A321;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
     color: #08A321;
-    margin-left: 5px;
-}
-
-.card-vend3a p {
-    margin-left: 5px;
-}
-
-.card-venda3 button{
-    background-color:green;
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 60%;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius:3px ;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.section-ofertas4{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.section-ofertas4 .retangulo-verde{
-    background-color: #08A321;
-    width: 100%;
-    height: 100px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-ofertas4 .retangulo-verde h2{
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 2.5em;
-}
-
-.bloco-ofertas4{
-    width: 100%;
-    height: 400px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.card-venda4{
-    background-color: #fff;
-    width: 15%;
-    height: 290px;
-    
-    border-radius: 7px 7px 0 0;
-}
-
-.card-venda4 .img-card{
-    width: 100%;
-    height: 50%;
-    background-image: url(../img/pratovegano.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 7px 7px 0 0;
-}
-
-.card-venda4 h4{
-    font-weight: 500;
-    font-size: 0.9em;
+    margin-left: 50px;
+    transition: 0.3s ease-in-out;
     margin-top: 10px;
-    margin-left: 5px;
-    color: black;
 }
 
-.card-venda4 h3{
-    color: #08A321;
-    margin-left: 5px;
-}
-
-.card-venda4 p {
-    margin-left: 5px;
-}
-
-.card-venda4 button{
-    background-color:green;
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 60%;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius:3px ;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-.section-ofertas5{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.section-ofertas5 .retangulo-verde{
+.card-venda button:hover{
     background-color: #08A321;
-    width: 100%;
-    height: 100px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-ofertas5 .retangulo-verde h2{
     color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 2.5em;
 }
-
-.bloco-ofertas5{
-    width: 100%;
-    height: 400px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.card-venda5{
-    background-color: #fff;
-    width: 15%;
-    height: 290px;
-    
-    border-radius: 7px 7px 0 0;
-}
-
-.card-venda5 .img-card{
-    width: 100%;
-    height: 50%;
-    background-image: url(../img/pratovegano.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 7px 7px 0 0;
-}
-
-.card-venda5 h4{
-    font-weight: 500;
-    font-size: 0.9em;
-    margin-top: 10px;
-    margin-left: 5px;
-    color: black;
-}
-
-.card-venda5 h3{
-    color: #08A321;
-    margin-left: 5px;
-}
-
-.card-venda5 p {
-    margin-left: 5px;
-}
-
-.card-venda5 button{
-    background-color:green;
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 60%;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius:3px ;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
 
 /*Rodapé*/
 
