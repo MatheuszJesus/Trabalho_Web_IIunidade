@@ -103,6 +103,18 @@ main{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
+}
+
+main .slogan_deitado{
+    position: absolute;
+    left: 10px;
+    top: 770px;
+    transform: rotate(-50deg);
+    font-family: 'California', sans-serif;
+    color: #08A321;
+    font-size: 5.5em;
+    font-weight: 200;
 }
 
 .bloco-filtro{
