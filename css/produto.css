@@ -24,12 +24,13 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 8px 15px;
+    padding: 20px 23px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s ease-in-out;
     z-index: 99;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -97,8 +98,8 @@ header{
 
 main{
     width: 100%;
-    min-height: 1000px;
-    margin-top: 80px;
+    min-height: 1080px;
+    margin-top: 120px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -107,9 +108,10 @@ main{
 .bloco-filtro{
     width: 20%;
     height: 600px;
-    background-color: red;
+    background-color: #fff;
     margin-left: 10px;
     margin-top: 50px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .bloco-ofertas{
@@ -130,6 +132,8 @@ main{
     border-radius: 7px 7px 0 0;
     margin-bottom: 20px;
     margin-right: 10px;
+    position: relative;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .img-card{
@@ -146,7 +150,7 @@ main{
 
 .card-venda h4{
     font-weight: 500;
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-top: 10px;
     margin-left: 5px;
     color: black;
@@ -154,11 +158,17 @@ main{
 
 .card-venda h3{
     color: #08A321;
-    margin-left: 5px;
+    position: absolute;
+    left: 5px;
+    top: 205px;
 }
 
 .card-venda p {
-    margin-left: 5px;
+    position: absolute;
+    top: 235px;
+    left: 5px;
+    font-size: 0.8em;
+    font-weight: 500;
 }
 
 .card-venda button{
@@ -172,9 +182,10 @@ main{
     font-size: 1em;
     color: #08A321;
     font-weight: 500;
-    margin-left: 50px;
     transition: 0.3s ease-in-out;
-    margin-top: 10px;
+    position: absolute;
+    top: 275px;
+    left: 55px;
 }
 
 .card-venda button:hover{
