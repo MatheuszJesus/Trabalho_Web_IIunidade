@@ -206,7 +206,7 @@ main .slogan_deitado{
     transition: 0.3s ease-in-out;
     position: absolute;
     top: 275px;
-    left: 55px;
+    left: 50px;
 }
 
 .card-venda button:hover{
