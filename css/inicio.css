@@ -40,11 +40,11 @@ header.rolagem h2{
     color: #08A321;
 }
 
-header.rolagem a{
+header.rolagem .linkar{
     color: #08A321;
 }
 
-header.rolagem .navegacao a::after{
+header.rolagem .navegacao .linkar::after{
     content: '';
     position: absolute;
     left: 0;
@@ -57,7 +57,7 @@ header.rolagem .navegacao a::after{
     transition: transform .5s;
 }
 
-header.rolagem .navegacao a:hover::after{
+header.rolagem .navegacao .linkar:hover::after{
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -85,7 +85,7 @@ header.rolagem .btn_login:hover{
    
 }
 
-.navegacao a{
+.navegacao .linkar{
     position: relative;
     font-size: 1.4em;
     color: #fff;
@@ -95,7 +95,7 @@ header.rolagem .btn_login:hover{
     transition: 0.3s ease-in-out;
 }
 
-.navegacao a::after{
+.navegacao .linkar::after{
     content: '';
     position: absolute;
     left: 0;
@@ -108,7 +108,7 @@ header.rolagem .btn_login:hover{
     transition: transform .5s;
 }
 
-.navegacao a:hover::after{
+.navegacao .linkar:hover::after{
     transform-origin: left;
     transform: scaleX(1);
 }

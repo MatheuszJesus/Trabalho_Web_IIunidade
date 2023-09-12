@@ -46,7 +46,7 @@ header{
    
 }
 
-.navegacao a{
+.navegacao .linkar{
     position: relative;
     font-size: 1.4em;
     color: #08A321;
@@ -56,7 +56,7 @@ header{
     transition: 0.3s ease-in-out;
 }
 
-.navegacao a::after{
+.navegacao .linkar::after{
     content: '';
     position: absolute;
     left: 0;
@@ -69,7 +69,7 @@ header{
     transition: transform .5s;
 }
 
-.navegacao a:hover::after{
+.navegacao .linkar:hover::after{
     transform-origin: left;
     transform: scaleX(1);
 }
