@@ -4,28 +4,167 @@
     }
 }
 
+@media (max-width:1050px){
+    body .section-ofertas{
+        height: 1600px;
+    }
+
+    .section-ofertas .ver-mais button{
+        bottom: 80px;
+        left: 120px;
+    }
+
+    .bloco-ofertas .card-venda{
+        width: 250px;
+        height: 400px;
+    }
+
+    .bloco-ofertas .card-venda h4{
+        font-size: 1em;
+    }
+
+    .bloco-ofertas .card-venda h3{
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width:975px){
+    body .section-ofertas{
+        height: 2000px;
+    }
+
+    .section-ofertas .ver-mais button{
+        bottom: 40px;
+        left: 110px;
+    }
+}
+
 @media (max-width: 930px) {
     header .navegacao{
         display: none;
     }
 
+    header .navegacao.active{
+        position: fixed;
+        background-color: #fff;
+        width: 600px;
+        max-width: 600px;
+        height: 500px;
+        max-height: 600px;
+        left: 15vw;
+        top: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    header .navegacao .linkar{
+        color: #08A321;
+        margin: 0;
+        padding: 0;
+    }
+
+    header .navegacao .btn_login{
+        color: #08A321;
+        border-radius: 6px;
+        border: 2px solid #08A321;
+        margin-right: 40px;
+    }
+
+    header .logo{
+        font-size: 6em;
+    }
+
     .menu-btn{
         background: url(../img/menu.png) no-repeat;
-        background-size: 30px;
+        background-size: 60px;
         background-position: center;
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+    .menu-btn.active{
+        background: url(../img/close.png) no-repeat;
+        background-size: 60px;
+        background-position: center;
+        width: 70px;
+        height: 70px;
         cursor: pointer;
         transition: 0.3s ease-in-out;
     }
 
     header.rolagem .menu-btn{
         background: url(../img/menu_verde.png) no-repeat;
-        background-size: 30px;
+        background-size: 60px;
         background-position: center;
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         cursor: pointer;
         transition: 0.3s ease-in-out;
     }
+
+    header.rolagem .menu-btn.active{
+        background: url(../img/close_verde.png) no-repeat;
+        background-size: 60px;
+        background-position: center;
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media (max-width:900px) {
+    .section-sobre .sobre-pt1{
+        display: none;
+    }
+
+    #sobre-nos{
+        font-size: 8em;
+    }
+    
+    .section-sobre .sobre-pt2{
+        width: 250px;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width:745px){
+    footer .bloco-footer h2{
+        font-size: 3em;
+    }
+
+    body .section-principal{
+        height: 1200px;
+    }
+}
+
+@media (max-width:650px){
+    body .section-sobre{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .section-sobre .sobre-pt2{
+        display: none;
+    }
+
+    .section-sobre .sobre-text{
+        width: 80%;
+        margin-left: 30px;
+    }
+
+    .section-sobre .sobre-text p{
+        max-width: 600px;
+        font-size: 1.3em;
+    }
+
+    
 }

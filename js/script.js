@@ -31,7 +31,9 @@ btn.addEventListener("click", function () {
 
 /*Responsive*/
 
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector(".menu-btn")
+const navegacao =  document.querySelector(".navegacao")
 menuBtn.addEventListener("click", ()=>{
     menuBtn.classList.toggle("active")
+    navegacao.classList.toggle("active")
 })
