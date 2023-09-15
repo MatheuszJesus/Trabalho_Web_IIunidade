@@ -1,0 +1,31 @@
+@media (max-width: 1400px) {
+    .section-principal img{
+        display: none;
+    }
+}
+
+@media (max-width: 930px) {
+    header .navegacao{
+        display: none;
+    }
+
+    .menu-btn{
+        background: url(../img/menu.png) no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+    header.rolagem .menu-btn{
+        background: url(../img/menu_verde.png) no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+}

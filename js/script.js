@@ -28,3 +28,10 @@ const btn = document.querySelector("#back-to-top")
 btn.addEventListener("click", function () {
     window.scrollTo(0,0)
 })
+
+/*Responsive*/
+
+const menuBtn = document.querySelector(".menu-btn");
+menuBtn.addEventListener("click", ()=>{
+    menuBtn.classList.toggle("active")
+})
