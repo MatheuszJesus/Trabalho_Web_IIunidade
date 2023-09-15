@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Página de Login</title>
-    <link rel="stylesheet" href="styleCa.css">
-    <title>Contra-Filé</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Contra-Filé - Login</title>
   </head>
   <body>
   <header id="header">
@@ -11,22 +13,35 @@
       <nav class="navegacao">
           <a href="index.html">Início</a>
           <a href="produto.html">Produtos</a>
-          <a href="#">Carrinho</a>
+          <a href="carrinho.html">Carrinho</a>
           <a href="index.html#sobre">Sobre</a>
       </nav>
   </header>
-    
-    <div class="enter">
-      <h1>Entrar</h1><br><br>
-      <form>
-        <img class="email" src="img/email.png" alt=""> <input type="email" placeholder="Entre com o seu E-mail"><br><br>
-        <img class="senha" src="img/senha.png" alt=""> <input type="password" placeholder="Entre com a sua senha"><br><br>
-        <button> Entrar </button><br><br>
-        <p>
-          <strong>Não tem uma conta?</strong> <a href="cadastro.html">Cadastre-se aqui</a>
-        </p>
-      </form>
+
+  
+  <section class="section-principal">
+  <div class="overlay"></div>    
+    <div class="box-grande">
+      <div class="img-login"></div>
+      <form action="" method="">
+
+        <h1>Bem Vindo!</h1>
+        <div class="bloco-input">
+          <img src="img/icones/email-icon.png" alt="">
+          <input type="text" placeholder="Email">
+        </div>
+
+        <div class="bloco-input">
+          <img src="img/icones/key-icon.png" alt="">
+          <input class="input-senha" type="password" placeholder="Senha">
+        </div>
+        <button type="submit">LOGIN</button>  
+        <a class="forget" href="">Esqueceu a senha?</a>
+        <p>É novo por aqui? <a href="cadastro.html">Registre-se</a></p>
+      </form>  
     </div>
+  </section>
+
     <footer>
       <div class="bloco-footer">
           <h2>Contra-Filé</h>
@@ -49,17 +64,25 @@
           <a href="">Aplicativo Móvel</a>
       </div>
       <div class="bloco-redes">
-          <div class="rede">
+          <a href="">
+            <div class="rede">
               <img src="img/icones/insta.png" alt="">
-          </div>
-          <div class="rede">
+            </div>
+          </a>
+          <a href="">
+            <div class="rede">
               <img src="img/icones/twitter.png" alt="">
-          </div>
-          <div class="rede">
+            </div>
+          </a>
+          <a href="">
+            <div class="rede">
               <img src="img/icones/facebook.png" alt="">
-          </div>
+            </div>
+          </a>
+          
       </div>
       <p class="direitos">2023 - &copyContra-Filé - Todos os direitos reservados.</p>
   </footer>
+  <script src="js/script.js"></script>
   </body>
 </html>

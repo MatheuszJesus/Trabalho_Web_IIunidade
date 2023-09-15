@@ -4,46 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleCa.css">
-    <title>Contra-Filé</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Contra-Filé - Cadastro</title>
   </head>
   <body>
-    <header id="header">
+  <header id="header">
       <a href="#inicio"><h2 class="logo">Contra-Filé</h2></a>
       <nav class="navegacao">
           <a href="index.html">Início</a>
           <a href="produto.html">Produtos</a>
-          <a href="#">Carrinho</a>
+          <a href="carrinho.html">Carrinho</a>
           <a href="index.html#sobre">Sobre</a>
       </nav>
   </header>
-    <div id="cad">
-      <h1>Faça o seu cadastro</h1>
-      <h4>Preencha os dados abaixo para darmos seguimento à sua ficha:</h4>
-    </div>
-      <div class="box">
-      <form>
-        <h1>Bem-Vindo</h1><br><br>
-        <strong>
-          <img class="usuario" src="img/usuario.png" alt=""><input placeholder="Primeiro Nome" type="text"><br><br>
-          <img class="usuario" src="img/usuario.png" alt=""><input placeholder="Sobrenome " type="text"><br><br>
-          <img class="email" src="img/email.png" alt=""><input placeholder="E-mail" type="email"><br><br>
-          <img class="senha" src="img/senha.png" alt=""><input placeholder="Senha" type="password"><br><br>
-          <img class="senha" src="img/senha.png" alt=""><input placeholder="Confirme a senha" type="password"><br><br>
-        </strong>
-          <button> Confirmar </button><br><br>
 
-          <p>
-            <strong> Já tem uma conta? </strong> <a href="login.html">Entrar</a>
-          </p><br>
+  
+  <section class="section-principal">
+  <div class="overlay"></div>    
+    <div class="box-grande">
+      <div class="img-login"></div>
+      <form action="" method="">
 
-          <p>
-            Ao clicar no botão <strong>Confirmar</strong>, você concorda com nossos <br>
-              <a href="#">Termos e Condições</a> e <a href="#">Políticas de Privacidade</a>
-            </p>
+        <h1>Bem Vindo!</h1>
+        <div class="bloco-input">
+          <img src="img/icones/email-icon.png" alt="">
+          <input type="text" placeholder="Nome completo">
+        </div>
+        <div class="bloco-input">
+          <img src="img/icones/email-icon.png" alt="">
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="bloco-input">
+          <img src="img/icones/key-icon.png" alt="">
+          <input class="input-senha" type="password" placeholder="Senha">
+        </div>
+        <div class="bloco-input">
+          <img src="img/icones/key-icon.png" alt="">
+          <input class="input-senha" type="password" placeholder="Confirme a senha">
+        </div>
+        <button type="submit">CADASTRAR</button>
+
+        <div class="textos">
+          <input type="checkbox">
+          <p class="termos" >Eu concordo com os <a href>termos e condições.</a></p>
+          <p class="link-login">Já tem uma conta? <a href="login.html">Login</a></p>
+        </div>
+        
+      </form>  
     </div>
-      </form>
-    </div>
+  </section>
 
     <footer>
       <div class="bloco-footer">
@@ -67,18 +76,25 @@
           <a href="">Aplicativo Móvel</a>
       </div>
       <div class="bloco-redes">
-          <div class="rede">
+          <a href="">
+            <div class="rede">
               <img src="img/icones/insta.png" alt="">
-          </div>
-          <div class="rede">
+            </div>
+          </a>
+          <a href="">
+            <div class="rede">
               <img src="img/icones/twitter.png" alt="">
-          </div>
-          <div class="rede">
+            </div>
+          </a>
+          <a href="">
+            <div class="rede">
               <img src="img/icones/facebook.png" alt="">
-          </div>
+            </div>
+          </a>
+          
       </div>
       <p class="direitos">2023 - &copyContra-Filé - Todos os direitos reservados.</p>
   </footer>
-    
+  <script src="js/script.js"></script>
   </body>
 </html>

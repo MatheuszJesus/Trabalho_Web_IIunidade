@@ -133,6 +133,22 @@ header.rolagem .btn_login:hover{
     color: black;
 }
 
+/*Botão voltar ao topo*/
+#back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background-color: #08A321;
+    border-radius: 5px;
+    border: none;
+    z-index: 99;
+    width: 150px;
+    height: 40px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 /*Seção do texto e da imagem da pessoa*/
 
 .section-principal{
@@ -277,11 +293,32 @@ header.rolagem .btn_login:hover{
 /*Seção ofertas*/
 .section-ofertas{
     width: 100%;
-    height: 800px;
+    height: 1200px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    position: relative;
+}
+
+.ver-mais button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #08A321;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 240px;
+    left: 165px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.ver-mais button:hover{
+    width: 123px;
+    height: 43px;
 }
 
 .section-ofertas .retangulo-verde{
@@ -302,33 +339,42 @@ header.rolagem .btn_login:hover{
 }
 
 .bloco-ofertas{
-    width: 100%;
+    width: 80%;
     height: 400px;
-    margin-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-top: 50px;
 }
 
 .card-venda{
     background-color: #fff;
-    width: 15%;
-    height: 250px;
+    width: 20%;
+    height: 320px;
+    border-radius: 7px 7px 0 0;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    position: relative;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.img-card{
+    width: 100%;
+    height: 50%;
     border-radius: 7px 7px 0 0;
 }
 
-.card-venda .img-card{
+.img-card img{
     width: 100%;
-    height: 50%;
-    background-image: url(../img/pratovegano.jpeg);
-    background-size: cover;
-    background-position: center;
+    height: 100%;
     border-radius: 7px 7px 0 0;
 }
 
 .card-venda h4{
     font-weight: 500;
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin-top: 10px;
     margin-left: 5px;
     color: black;
@@ -336,11 +382,39 @@ header.rolagem .btn_login:hover{
 
 .card-venda h3{
     color: #08A321;
-    margin-left: 5px;
+    position: absolute;
+    left: 5px;
+    top: 205px;
 }
 
 .card-venda p {
-    margin-left: 5px;
+    position: absolute;
+    top: 235px;
+    left: 5px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.card-venda button{
+    width: 130px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #08A321;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #08A321;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    top: 275px;
+    left: 50px;
+}
+
+.card-venda button:hover{
+    background-color: #08A321;
+    color: #fff;
 }
 
 
@@ -419,8 +493,6 @@ footer .direitos{
 }
 
 .rede:hover{
-    width: 45px;
-    height: 45px;
     background-color: #08A321;
 }
 
