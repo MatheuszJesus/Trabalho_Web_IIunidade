@@ -25,9 +25,21 @@ window.addEventListener("scroll", ()=>{
 /*Botão voltar ao topo*/
 
 const btn = document.querySelector("#back-to-top")
+
+
 btn.addEventListener("click", function () {
     window.scrollTo(0,0)
 })
+
+document.addEventListener("scroll", ocultar)
+
+function ocultar() {
+    if (scrollY > 10) {
+        btn.style.display = ""
+    }else{
+        btn.style.display = "none"
+    }
+}
 
 /*Responsive*/
 

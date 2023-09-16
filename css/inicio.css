@@ -13,8 +13,9 @@
     text-decoration: none;
 }
 
-body{
+html, body{
     background-color: #ede4e4;
+    scroll-behavior: smooth;
 }
 /*Header*/
 
